@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tryave — AI Safety Intelligence Platform</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Styles (load order matters) -->
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/layout.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+  <link rel="stylesheet" href="assets/css/sections.css" />
+  <link rel="stylesheet" href="assets/css/animations.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+</head>
+<body>
+
+  <!-- ─── Navigation ──────────────────────────────────── -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <img src="assets/images/tryave-logo.svg" alt="Tryave Logo" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="#problem">Problem</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#use-cases">Use Cases</a></li>
+        <li><a href="#technology">Technology</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="#contact" class="btn btn-outline btn-sm">Contact</a>
+        <a href="#contact" class="btn btn-primary btn-sm">Request Demo</a>
+      </div>
+      <div class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <ul>
+      <li><a href="#problem">Problem</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#how-it-works">How It Works</a></li>
+      <li><a href="#use-cases">Use Cases</a></li>
+      <li><a href="#technology">Technology</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="btn btn-primary btn-block">Request Demo</a>
+  </div>
+
+  <!-- ─── Hero ────────────────────────────────────────── -->
+  <section id="hero">
+    <div class="hero-grid" aria-hidden="true"></div>
+    <div class="hero-glow"  aria-hidden="true"></div>
+    <div class="hero-content">
+      <div class="hero-eyebrow">AI Safety Intelligence Platform</div>
+      <h1 class="hero-title">
+        Your Third Eye for<br>
+        <span class="gold-grad">Industrial Safety</span>
+      </h1>
+      <p class="hero-sub">
+        Tryave transforms ordinary CCTV cameras into intelligent safety and security systems.
+        Detect risks, monitor operations, and receive real-time alerts — powered by AI.
+      </p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn btn-primary">
+          <span aria-hidden="true">🎯</span> Request Demo
+        </a>
+        <a href="#how-it-works" class="btn btn-outline">
+          <span aria-hidden="true">▶</span> See How It Works
+        </a>
+      </div>
+
+      <div class="hero-flow" aria-label="How Tryave works">
+        <div class="flow-item">
+          <div class="flow-icon" aria-hidden="true">📷</div>
+          <div class="flow-label">CCTV Camera</div>
+        </div>
+        <div class="flow-arrow" aria-hidden="true">→</div>
+        <div class="flow-item">
+          <div class="flow-icon" aria-hidden="true">🤖</div>
+          <div class="flow-label">AI Processing</div>
+        </div>
+        <div class="flow-arrow" aria-hidden="true">→</div>
+        <div class="flow-item">
+          <div class="flow-icon" aria-hidden="true">⚡</div>
+          <div class="flow-label">Event Detection</div>
+        </div>
+        <div class="flow-arrow" aria-hidden="true">→</div>
+        <div class="flow-item">
+          <div class="flow-icon" aria-hidden="true">🔔</div>
+          <div class="flow-label">Instant Alert</div>
+        </div>
+        <div class="flow-arrow" aria-hidden="true">→</div>
+        <div class="flow-item">
+          <div class="flow-icon" aria-hidden="true">📊</div>
+          <div class="flow-label">Dashboard</div>
+        </div>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <div class="stat-num">Real-Time</div>
+          <div class="stat-label">Video Analysis</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">Edge AI</div>
+          <div class="stat-label">On-Site Processing</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">Zero</div>
+          <div class="stat-label">Hardware Replacement</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">24/7</div>
+          <div class="stat-label">Autonomous Monitoring</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Problem ─────────────────────────────────────── -->
+  <section id="problem" class="section">
+    <div class="container">
+      <div class="problem-grid">
+        <div class="fade-up">
+          <div class="tag">The Problem</div>
+          <h2 class="section-title">
+            Cameras Record.<br>They Don't <span class="gold">Understand.</span>
+          </h2>
+          <div class="divider"></div>
+          <p class="section-sub">
+            Most industrial facilities invest heavily in CCTV infrastructure — yet these systems
+            mostly function as passive recording tools. Incidents are discovered only after they happen.
+          </p>
+          <div class="problem-pills">
+            <div class="problem-pill">
+              <div class="pill-icon" aria-hidden="true">📹</div>
+              Hundreds of cameras but no real-time monitoring
+            </div>
+            <div class="problem-pill">
+              <div class="pill-icon" aria-hidden="true">⏰</div>
+              Safety violations detected only after incidents happen
+            </div>
+            <div class="problem-pill">
+              <div class="pill-icon" aria-hidden="true">👁️</div>
+              Manual monitoring that is expensive and ineffective
+            </div>
+            <div class="problem-pill">
+              <div class="pill-icon" aria-hidden="true">📋</div>
+              Difficulty generating incident evidence and reports
+            </div>
+            <div class="problem-pill">
+              <div class="pill-icon" aria-hidden="true">🚨</div>
+              Lack of real-time alerts for safety or security risks
+            </div>
+          </div>
+          <p class="big-quote">
+            "Your cameras are recording<br>
+            <span>everything</span> — but watching <span>nothing</span>."
+          </p>
+        </div>
+
+        <div class="problem-visual fade-up" aria-hidden="true">
+          <div class="camera-card">
+            <div class="camera-badge">PASSIVE</div>
+            <div class="camera-card-icon">📷</div>
+            <div class="camera-card-title">Traditional CCTV</div>
+            <div class="camera-card-sub">Records everything. Understands nothing.</div>
+            <div class="camera-undetected-list">
+              <div class="camera-undetected-item">
+                <span class="dot-danger">●</span> PPE Violation — undetected
+              </div>
+              <div class="camera-undetected-item">
+                <span class="dot-danger">●</span> Zone intrusion — undetected
+              </div>
+              <div class="camera-undetected-item">
+                <span class="dot-danger">●</span> Worker fall — undetected
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Solution ────────────────────────────────────── -->
+  <section id="solution" class="section">
+    <div class="container">
+      <div class="solution-grid">
+        <div class="fade-up">
+          <div class="tag">The Solution</div>
+          <h2 class="section-title">
+            Turn Cameras Into<br><span class="gold-grad">AI Observers</span>
+          </h2>
+          <div class="divider"></div>
+          <p class="section-sub">
+            Tryave uses advanced computer vision to analyze video streams in real time.
+            Instead of recording everything and reviewing later, the system detects important events instantly.
+          </p>
+          <div class="solution-steps">
+            <div class="sol-step">
+              <div class="step-num-wrap"><div class="step-num">01</div></div>
+              <div class="step-body">
+                <div class="step-title">Detects the Event</div>
+                <div class="step-desc">AI models continuously analyze live video streams and identify safety risks, violations, and security incidents the moment they occur.</div>
+              </div>
+            </div>
+            <div class="sol-step">
+              <div class="step-num-wrap"><div class="step-num">02</div></div>
+              <div class="step-body">
+                <div class="step-title">Saves a Short Video Clip</div>
+                <div class="step-desc">Every detected event is automatically captured and stored as a short video clip for investigation and audit purposes.</div>
+              </div>
+            </div>
+            <div class="sol-step">
+              <div class="step-num-wrap"><div class="step-num">03</div></div>
+              <div class="step-body">
+                <div class="step-title">Sends Alerts to the Right People</div>
+                <div class="step-desc">Instant notifications are pushed to mobile devices and dashboards so the right person can respond immediately.</div>
+              </div>
+            </div>
+            <div class="sol-step">
+              <div class="step-num-wrap"><div class="step-num">04</div></div>
+              <div class="step-body">
+                <div class="step-title">Generates Daily Intelligence Reports</div>
+                <div class="step-desc">Automated daily summaries give managers full visibility into safety compliance, incidents, and operational patterns.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="solution-visual fade-up">
+          <div class="dash-header">
+            <div class="dash-title">Tryave Intelligence Dashboard</div>
+            <div class="live-badge">
+              <div class="live-dot"></div> Live
+            </div>
+          </div>
+          <div class="dash-alerts">
+            <div class="dash-alert">
+              <div class="alert-dot alert-red"></div>
+              <div class="alert-text">PPE violation detected — Zone A, Camera 04</div>
+              <div class="alert-time">Now</div>
+            </div>
+            <div class="dash-alert">
+              <div class="alert-dot alert-amber"></div>
+              <div class="alert-text">Restricted area intrusion — Warehouse B</div>
+              <div class="alert-time">2m ago</div>
+            </div>
+            <div class="dash-alert">
+              <div class="alert-dot alert-amber"></div>
+              <div class="alert-text">Worker near hazardous machinery — Bay 3</div>
+              <div class="alert-time">7m ago</div>
+            </div>
+            <div class="dash-alert">
+              <div class="alert-dot alert-green"></div>
+              <div class="alert-text">Daily compliance report generated</div>
+              <div class="alert-time">1h ago</div>
+            </div>
+          </div>
+          <div class="dash-stats">
+            <div class="dash-stat">
+              <div class="ds-num">24</div>
+              <div class="ds-label">Cameras Active</div>
+            </div>
+            <div class="dash-stat">
+              <div class="ds-num">3</div>
+              <div class="ds-label">Alerts Today</div>
+            </div>
+            <div class="dash-stat">
+              <div class="ds-num">98%</div>
+              <div class="ds-label">Compliance</div>
+            </div>
+          </div>
+          <div class="dash-status">
+            <span class="dash-status-label">↑ Active Monitoring</span> —
+            Cameras recording and AI analyzing all live feeds
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Features ────────────────────────────────────── -->
+  <section id="features" class="section">
+    <div class="container">
+      <div class="section-header fade-up">
+        <div class="tag">Key Capabilities</div>
+        <h2 class="section-title">
+          Everything You Need to<br><span class="gold-grad">Monitor What Matters</span>
+        </h2>
+        <p class="section-sub">
+          Comprehensive AI-powered video intelligence built for industrial environments
+          where safety is non-negotiable.
+        </p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card fade-up">
+          <div class="feature-icon" aria-hidden="true">⚡</div>
+          <div class="feature-title">Real-Time AI Monitoring</div>
+          <div class="feature-desc">Continuously analyzes live camera feeds to detect safety and security events instantly — 24 hours a day, 7 days a week, with no human intervention required.</div>
+        </div>
+        <div class="feature-card fade-up">
+          <div class="feature-icon" aria-hidden="true">🔔</div>
+          <div class="feature-title">Smart Instant Alerts</div>
+          <div class="feature-desc">When a violation or suspicious event is detected, Tryave sends instant alerts to mobile devices and dashboards so your team can respond before situations escalate.</div>
+        </div>
+        <div class="feature-card fade-up">
+          <div class="feature-icon" aria-hidden="true">🎬</div>
+          <div class="feature-title">Automatic Incident Clips</div>
+          <div class="feature-desc">The system automatically records and stores short video clips of every detected event, making investigations fast, reliable, and fully documented.</div>
+        </div>
+        <div class="feature-card fade-up">
+          <div class="feature-icon" aria-hidden="true">🦺</div>
+          <div class="feature-title">PPE Compliance Detection</div>
+          <div class="feature-desc">Detect workers not wearing helmets, safety vests, or other protective equipment in real time — before accidents happen, not after.</div>
+        </div>
+        <div class="feature-card fade-up">
+          <div class="feature-icon" aria-hidden="true">🚧</div>
+          <div class="feature-title">Restricted Zone Monitoring</div>
+          <div class="feature-desc">Define virtual safety zones and receive instant alerts when unauthorized persons enter dangerous or restricted areas on your site.</div>
+        </div>
+        <div class="feature-card fade-up">
+          <div class="feature-icon" aria-hidden="true">📊</div>
+          <div class="feature-title">Daily Intelligence Reports</div>
+          <div class="feature-desc">Managers receive automated daily summaries covering safety violations, security incidents, and operational observations — with no manual effort required.</div>
+        </div>
+        <div class="feature-card fade-up">
+          <div class="feature-icon" aria-hidden="true">🔌</div>
+          <div class="feature-title">Works with Existing Cameras</div>
+          <div class="feature-desc">Tryave integrates with your existing CCTV infrastructure via RTSP streams. No need to replace hardware — your investment is protected.</div>
+        </div>
+        <div class="feature-card fade-up">
+          <div class="feature-icon" aria-hidden="true">🖥️</div>
+          <div class="feature-title">Edge AI Processing</div>
+          <div class="feature-desc">Runs on edge devices such as NVIDIA Jetson hardware, enabling real-time video processing directly on-site with minimal latency and no bandwidth dependency.</div>
+        </div>
+        <div class="feature-card fade-up">
+          <div class="feature-icon" aria-hidden="true">🌐</div>
+          <div class="feature-title">Scalable Architecture</div>
+          <div class="feature-desc">From a single site to large multi-location industrial environments — Tryave scales to match your organization without complexity.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── How It Works ────────────────────────────────── -->
+  <section id="how-it-works" class="section">
+    <div class="container">
+      <div class="section-header fade-up">
+        <div class="tag">How It Works</div>
+        <h2 class="section-title">
+          Up and Running in<br><span class="gold-grad">4 Simple Steps</span>
+        </h2>
+        <p class="section-sub">
+          No complex infrastructure changes. Tryave connects to your existing cameras
+          and starts delivering intelligence immediately.
+        </p>
+      </div>
+      <div class="steps-track">
+        <div class="step-card fade-up">
+          <div class="step-circle">
+            <span aria-hidden="true">📷</span>
+            <div class="step-num-label" aria-hidden="true">1</div>
+          </div>
+          <div class="step-card-title">Connect Cameras</div>
+          <div class="step-card-desc">Tryave connects to your existing CCTV cameras via standard RTSP streams. No hardware replacement needed.</div>
+        </div>
+        <div class="step-card fade-up">
+          <div class="step-circle">
+            <span aria-hidden="true">🤖</span>
+            <div class="step-num-label" aria-hidden="true">2</div>
+          </div>
+          <div class="step-card-title">AI Video Analysis</div>
+          <div class="step-card-desc">Deep learning models analyze live video streams continuously, understanding what is actually happening in every frame.</div>
+        </div>
+        <div class="step-card fade-up">
+          <div class="step-circle">
+            <span aria-hidden="true">⚡</span>
+            <div class="step-num-label" aria-hidden="true">3</div>
+          </div>
+          <div class="step-card-title">Event Detection</div>
+          <div class="step-card-desc">The system identifies safety violations, unusual activity, security risks, and operational anomalies the moment they occur.</div>
+        </div>
+        <div class="step-card fade-up">
+          <div class="step-circle">
+            <span aria-hidden="true">🔔</span>
+            <div class="step-num-label" aria-hidden="true">4</div>
+          </div>
+          <div class="step-card-title">Instant Alerts</div>
+          <div class="step-card-desc">Managers receive notifications and event video clips immediately on their mobile devices and monitoring dashboards.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Use Cases ────────────────────────────────────── -->
+  <section id="use-cases" class="section">
+    <div class="container">
+      <div class="section-header fade-up">
+        <div class="tag">Use Cases</div>
+        <h2 class="section-title">
+          Built for Every<br><span class="gold-grad">Industrial Environment</span>
+        </h2>
+        <p class="section-sub">
+          From construction sites to warehouses — Tryave delivers actionable AI intelligence
+          wherever safety and security matter most.
+        </p>
+      </div>
+      <div class="cases-grid">
+        <div class="case-card fade-up">
+          <div class="case-top">
+            <div class="case-icon" aria-hidden="true">🏗️</div>
+            <div class="case-title">Construction Site Safety</div>
+            <div class="case-sub">Monitor PPE compliance, detect unsafe behaviors, and identify restricted area intrusions on active construction sites in real time.</div>
+          </div>
+          <div class="case-bottom">
+            <div class="case-tags">
+              <span class="case-tag">Helmet Detection</span>
+              <span class="case-tag">Vest Compliance</span>
+              <span class="case-tag">Zone Alerts</span>
+            </div>
+          </div>
+        </div>
+        <div class="case-card fade-up">
+          <div class="case-top">
+            <div class="case-icon" aria-hidden="true">📦</div>
+            <div class="case-title">Warehouse Monitoring</div>
+            <div class="case-sub">Track worker movement, monitor vehicle activity, detect safety violations, and optimize workflow visibility across warehouse operations.</div>
+          </div>
+          <div class="case-bottom">
+            <div class="case-tags">
+              <span class="case-tag">Worker Tracking</span>
+              <span class="case-tag">Vehicle Activity</span>
+              <span class="case-tag">Flow Optimization</span>
+            </div>
+          </div>
+        </div>
+        <div class="case-card fade-up">
+          <div class="case-top">
+            <div class="case-icon" aria-hidden="true">🏭</div>
+            <div class="case-title">Manufacturing Facilities</div>
+            <div class="case-sub">Identify unsafe interactions with machinery, monitor restricted zones, and detect unusual worker behaviors around hazardous equipment.</div>
+          </div>
+          <div class="case-bottom">
+            <div class="case-tags">
+              <span class="case-tag">Machinery Safety</span>
+              <span class="case-tag">Hazard Zones</span>
+              <span class="case-tag">Behavior Analysis</span>
+            </div>
+          </div>
+        </div>
+        <div class="case-card fade-up">
+          <div class="case-top">
+            <div class="case-icon" aria-hidden="true">🔒</div>
+            <div class="case-title">Industrial Security</div>
+            <div class="case-sub">Detect unauthorized access, monitor perimeter security, and identify suspicious behavior at sensitive industrial facilities and infrastructure.</div>
+          </div>
+          <div class="case-bottom">
+            <div class="case-tags">
+              <span class="case-tag">Access Control</span>
+              <span class="case-tag">Perimeter Watch</span>
+              <span class="case-tag">Intrusion Alerts</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Industries ───────────────────────────────────── -->
+  <section id="industries" class="section-sm">
+    <div class="container">
+      <div class="section-header fade-up">
+        <div class="tag">Target Industries</div>
+        <h2 class="section-title">Industries We <span class="gold-grad">Serve</span></h2>
+      </div>
+      <div class="industries-wrap">
+        <div class="industry-badge fade-up"><span class="ind-icon" aria-hidden="true">🏗️</span> Construction</div>
+        <div class="industry-badge fade-up"><span class="ind-icon" aria-hidden="true">📦</span> Warehousing &amp; Logistics</div>
+        <div class="industry-badge fade-up"><span class="ind-icon" aria-hidden="true">🏭</span> Manufacturing</div>
+        <div class="industry-badge fade-up"><span class="ind-icon" aria-hidden="true">⚙️</span> Industrial Facilities</div>
+        <div class="industry-badge fade-up"><span class="ind-icon" aria-hidden="true">🏗️</span> Infrastructure</div>
+        <div class="industry-badge fade-up"><span class="ind-icon" aria-hidden="true">⚓</span> Ports &amp; Large Industrial Sites</div>
+        <div class="industry-badge fade-up"><span class="ind-icon" aria-hidden="true">⚡</span> Energy &amp; Utilities</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Who Uses ─────────────────────────────────────── -->
+  <section id="who-uses" class="section">
+    <div class="container">
+      <div class="section-header fade-up">
+        <div class="tag">Who Uses Tryave</div>
+        <h2 class="section-title">
+          Built for Safety &amp;<br><span class="gold-grad">Operations Leaders</span>
+        </h2>
+        <p class="section-sub">
+          Designed for professionals responsible for safety, operations, and risk management
+          in industrial environments.
+        </p>
+      </div>
+      <div class="roles-grid">
+        <div class="role-card fade-up">
+          <div class="role-icon" aria-hidden="true">🦺</div>
+          <div>
+            <div class="role-name">Safety Officers</div>
+            <div class="role-desc">Monitor compliance, prevent workplace accidents, and ensure safety protocols are followed across every camera zone — automatically.</div>
+          </div>
+        </div>
+        <div class="role-card fade-up">
+          <div class="role-icon" aria-hidden="true">📋</div>
+          <div>
+            <div class="role-name">Operations Managers</div>
+            <div class="role-desc">Improve productivity and gain full operational visibility into how your site actually works, without being physically present.</div>
+          </div>
+        </div>
+        <div class="role-card fade-up">
+          <div class="role-icon" aria-hidden="true">📡</div>
+          <div>
+            <div class="role-name">Site Supervisors</div>
+            <div class="role-desc">Get instant alerts about incidents on site the moment they happen, so you can respond quickly and effectively.</div>
+          </div>
+        </div>
+        <div class="role-card fade-up">
+          <div class="role-icon" aria-hidden="true">🔐</div>
+          <div>
+            <div class="role-name">Security Teams</div>
+            <div class="role-desc">Monitor restricted areas, detect unauthorized activity, and protect sensitive industrial facilities with AI-powered vigilance.</div>
+          </div>
+        </div>
+        <div class="role-card fade-up">
+          <div class="role-icon" aria-hidden="true">📜</div>
+          <div>
+            <div class="role-name">Risk &amp; Compliance Teams</div>
+            <div class="role-desc">Use automated reports and incident video data to ensure safety standards are met and to support audits and risk analysis.</div>
+          </div>
+        </div>
+        <div class="role-card fade-up">
+          <div class="role-icon" aria-hidden="true">🏦</div>
+          <div>
+            <div class="role-name">Insurance Risk Assessors</div>
+            <div class="role-desc">Use data-driven insights and documented incident evidence to accurately assess and manage operational risk profiles.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Why Tryave ───────────────────────────────────── -->
+  <section id="why-trayve" class="section">
+    <div class="container">
+      <div class="section-header fade-up">
+        <div class="tag">Business Value</div>
+        <h2 class="section-title">
+          Measurable Impact<br>from Day <span class="gold-grad">One</span>
+        </h2>
+        <p class="section-sub">
+          Organizations using Tryave move from reactive safety management to proactive
+          risk prevention with measurable results.
+        </p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card fade-up">
+          <div class="why-num" aria-hidden="true">01</div>
+          <div>
+            <div class="why-title">Reduce Workplace Accidents</div>
+            <div class="why-desc">Identify safety risks before incidents happen by continuously monitoring all camera feeds for dangerous situations.</div>
+          </div>
+        </div>
+        <div class="why-card fade-up">
+          <div class="why-num" aria-hidden="true">02</div>
+          <div>
+            <div class="why-title">Improve Safety Compliance</div>
+            <div class="why-desc">Ensure safety protocols and PPE standards are followed at all times — automatically and without manual oversight.</div>
+          </div>
+        </div>
+        <div class="why-card fade-up">
+          <div class="why-num" aria-hidden="true">03</div>
+          <div>
+            <div class="why-title">Lower Insurance Risk</div>
+            <div class="why-desc">Documented incidents, compliance reports, and proactive safety monitoring help reduce insurance premiums and liability exposure.</div>
+          </div>
+        </div>
+        <div class="why-card fade-up">
+          <div class="why-num" aria-hidden="true">04</div>
+          <div>
+            <div class="why-title">Reduce Monitoring Costs</div>
+            <div class="why-desc">AI replaces the need for teams of manual camera monitors, dramatically reducing operational costs while improving coverage.</div>
+          </div>
+        </div>
+        <div class="why-card fade-up">
+          <div class="why-num" aria-hidden="true">05</div>
+          <div>
+            <div class="why-title">Faster Incident Response</div>
+            <div class="why-desc">Get real-time alerts instead of reviewing footage hours after events. Response time moves from hours to seconds.</div>
+          </div>
+        </div>
+        <div class="why-card fade-up">
+          <div class="why-num" aria-hidden="true">06</div>
+          <div>
+            <div class="why-title">Better Operational Insights</div>
+            <div class="why-desc">Understand how your site actually operates — worker movement, vehicle flows, and equipment usage — to optimize efficiency.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Technology ───────────────────────────────────── -->
+  <section id="technology" class="section">
+    <div class="container">
+      <div class="fade-up">
+        <div class="tag">Technology</div>
+        <h2 class="section-title">
+          Enterprise-Grade AI<br><span class="gold-grad">Architecture</span>
+        </h2>
+        <div class="divider"></div>
+        <p class="section-sub">
+          Tryave combines modern computer vision, edge computing, and scalable cloud infrastructure
+          to deliver reliable AI intelligence in the most demanding industrial environments.
+        </p>
+      </div>
+      <div class="tech-layout">
+        <div class="tech-stack fade-up">
+          <div class="tech-item">
+            <div class="tech-icon" aria-hidden="true">👁️</div>
+            <div>
+              <div class="tech-name">Computer Vision</div>
+              <div class="tech-desc">Real-time object detection, tracking, and scene understanding using state-of-the-art vision models</div>
+            </div>
+          </div>
+          <div class="tech-item">
+            <div class="tech-icon" aria-hidden="true">🧠</div>
+            <div>
+              <div class="tech-name">Deep Learning Models</div>
+              <div class="tech-desc">YOLO, RT-DETR, and custom-trained models for PPE detection, pose estimation, and behavior analysis</div>
+            </div>
+          </div>
+          <div class="tech-item">
+            <div class="tech-icon" aria-hidden="true">⚡</div>
+            <div>
+              <div class="tech-name">Edge AI Processing</div>
+              <div class="tech-desc">NVIDIA Jetson Orin Nano enables on-site real-time processing with minimal latency and bandwidth</div>
+            </div>
+          </div>
+          <div class="tech-item">
+            <div class="tech-icon" aria-hidden="true">🎥</div>
+            <div>
+              <div class="tech-name">Real-Time Video Analytics</div>
+              <div class="tech-desc">RTSP stream ingestion with frame-by-frame analysis for continuous, uninterrupted monitoring</div>
+            </div>
+          </div>
+          <div class="tech-item">
+            <div class="tech-icon" aria-hidden="true">☁️</div>
+            <div>
+              <div class="tech-name">Cloud Monitoring Dashboard</div>
+              <div class="tech-desc">Centralized web dashboard for multi-site monitoring, reporting, and historical incident review</div>
+            </div>
+          </div>
+          <div class="tech-item">
+            <div class="tech-icon" aria-hidden="true">📱</div>
+            <div>
+              <div class="tech-name">Mobile Alerting System</div>
+              <div class="tech-desc">Push notifications deliver instant alerts and video clips directly to phones for immediate response</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="arch-card fade-up">
+          <div class="arch-title">System Architecture</div>
+          <div class="arch-flow">
+            <div class="arch-node">
+              <div class="arch-node-icon" aria-hidden="true">📷</div>
+              <div>
+                <div class="arch-node-label">CCTV Cameras</div>
+                <div class="arch-node-sub">RTSP Video Streams</div>
+              </div>
+            </div>
+            <div class="arch-connector">
+              <div class="arch-connector-line"></div>
+              <div class="arch-connector-label">↓ RTSP feed ingestion</div>
+            </div>
+            <div class="arch-node">
+              <div class="arch-node-icon" aria-hidden="true">🖥️</div>
+              <div>
+                <div class="arch-node-label">Edge AI Device</div>
+                <div class="arch-node-sub">NVIDIA Jetson Orin Nano</div>
+              </div>
+            </div>
+            <div class="arch-connector">
+              <div class="arch-connector-line"></div>
+              <div class="arch-connector-label">↓ AI video processing</div>
+            </div>
+            <div class="arch-node">
+              <div class="arch-node-icon" aria-hidden="true">⚡</div>
+              <div>
+                <div class="arch-node-label">Event Detection Engine</div>
+                <div class="arch-node-sub">Computer Vision + Deep Learning</div>
+              </div>
+            </div>
+            <div class="arch-connector">
+              <div class="arch-connector-line"></div>
+              <div class="arch-connector-label">↓ Event metadata + clip</div>
+            </div>
+            <div class="arch-node">
+              <div class="arch-node-icon" aria-hidden="true">☁️</div>
+              <div>
+                <div class="arch-node-label">Cloud Backend</div>
+                <div class="arch-node-sub">Storage + Processing + APIs</div>
+              </div>
+            </div>
+            <div class="arch-connector">
+              <div class="arch-connector-line"></div>
+              <div class="arch-connector-label">↓ Alerts + Reports</div>
+            </div>
+            <div class="arch-node">
+              <div class="arch-node-icon" aria-hidden="true">📊</div>
+              <div>
+                <div class="arch-node-label">Dashboard + Mobile Alerts</div>
+                <div class="arch-node-sub">Web Portal + Push Notifications</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CTA Band ─────────────────────────────────────── -->
+  <section id="cta-band" class="section">
+    <div class="container">
+      <div class="cta-band-inner fade-up">
+        <h2 class="cta-band-title">
+          See Tryave in <span class="gold-grad">Action</span>
+        </h2>
+        <p class="cta-band-sub">
+          Schedule a demo to see how AI-powered video intelligence can transform your
+          safety and security operations — starting with the cameras you already have.
+        </p>
+        <a href="#contact" class="btn btn-primary btn-lg">
+          <span aria-hidden="true">🎯</span> Request a Free Demo
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Contact ──────────────────────────────────────── -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="contact-layout">
+        <div class="fade-up">
+          <div class="tag">Get In Touch</div>
+          <div class="contact-info-title">
+            Let's Talk About<br>Your Safety Needs
+          </div>
+          <p class="contact-info-sub">
+            Ready to transform your CCTV cameras into intelligent AI observers?
+            Fill out the form and our team will get back to you within 24 hours.
+          </p>
+          <div class="contact-detail">
+            <div class="cd-icon" aria-hidden="true">📧</div>
+            <div>
+              <div class="cd-label">Email</div>
+              <div class="cd-value">hello@tryave.ai</div>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="cd-icon" aria-hidden="true">🌐</div>
+            <div>
+              <div class="cd-label">Website</div>
+              <div class="cd-value">tryave.ai</div>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="cd-icon" aria-hidden="true">📍</div>
+            <div>
+              <div class="cd-label">Focus</div>
+              <div class="cd-value">Industrial AI Safety Intelligence</div>
+            </div>
+          </div>
+          <div class="contact-checklist">
+            <div class="contact-checklist-heading">What to Expect</div>
+            <div class="checklist-items">
+              <div class="checklist-item">
+                <span class="check-icon" aria-hidden="true">✓</span> Response within 24 hours
+              </div>
+              <div class="checklist-item">
+                <span class="check-icon" aria-hidden="true">✓</span> Personalized product demo
+              </div>
+              <div class="checklist-item">
+                <span class="check-icon" aria-hidden="true">✓</span> Custom implementation plan
+              </div>
+              <div class="checklist-item">
+                <span class="check-icon" aria-hidden="true">✓</span> No commitment required
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form fade-up">
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name *</label>
+                <input type="text" id="firstName" name="firstName" placeholder="John" required />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name *</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Smith" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Work Email *</label>
+              <input type="email" id="email" name="email" placeholder="john@company.com" required />
+            </div>
+            <div class="form-group">
+              <label for="company">Company Name *</label>
+              <input type="text" id="company" name="company" placeholder="Your Company Ltd." required />
+            </div>
+            <div class="form-group">
+              <label for="industry">Industry</label>
+              <select id="industry" name="industry">
+                <option value="" disabled selected>Select your industry</option>
+                <option>Construction</option>
+                <option>Warehousing &amp; Logistics</option>
+                <option>Manufacturing</option>
+                <option>Industrial Facilities</option>
+                <option>Energy &amp; Utilities</option>
+                <option>Ports &amp; Infrastructure</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="role">Your Role</label>
+              <select id="role" name="role">
+                <option value="" disabled selected>Select your role</option>
+                <option>Safety Officer</option>
+                <option>Operations Manager</option>
+                <option>Site Supervisor</option>
+                <option>Security Team</option>
+                <option>Risk &amp; Compliance</option>
+                <option>C-Level Executive</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Tell Us About Your Needs</label>
+              <textarea id="message" name="message" placeholder="How many cameras do you have? What are your main safety challenges? Any specific requirements?"></textarea>
+            </div>
+            <button type="submit" class="form-submit" id="submitBtn">
+              <span aria-hidden="true">🎯</span> Request Demo
+            </button>
+            <p class="form-note">
+              By submitting, you agree to our Privacy Policy. We'll never share your information.
+            </p>
+            <div id="formSuccess" class="form-success" role="status" aria-live="polite">
+              ✅ Thank you! We'll be in touch within 24 hours.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Footer ───────────────────────────────────────── -->
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="assets/images/tryave-logo.svg" alt="Tryave" />
+          <p class="footer-brand-desc">
+            AI-powered video intelligence platform transforming ordinary CCTV cameras
+            into intelligent safety and security systems for industrial environments.
+          </p>
+        </div>
+        <div>
+          <div class="footer-col-title">Product</div>
+          <ul class="footer-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#technology">Technology</a></li>
+            <li><a href="#use-cases">Use Cases</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Industries</div>
+          <ul class="footer-links">
+            <li><a href="#use-cases">Construction</a></li>
+            <li><a href="#use-cases">Warehousing</a></li>
+            <li><a href="#use-cases">Manufacturing</a></li>
+            <li><a href="#use-cases">Industrial Security</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Company</div>
+          <ul class="footer-links">
+            <li><a href="#problem">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#contact">Request Demo</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-copy">© 2025 Tryave. All rights reserved.</div>
+        <div class="footer-made">Built with <span>♥</span> for safer industrial workplaces</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js" defer></script>
+
+</body>
+</html>

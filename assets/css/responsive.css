@@ -1,0 +1,60 @@
+/* ═══════════════════════════════════════════════════════
+   RESPONSIVE — mobile-first breakpoints
+   ═══════════════════════════════════════════════════════ */
+
+/* ─── Tablet (≤ 1024px) ──────────────────────────────── */
+@media (max-width: 1024px) {
+  .problem-grid,
+  .solution-grid,
+  .tech-layout,
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .steps-track {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .steps-track::before { display: none; }
+
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* ─── Mobile (≤ 768px) ───────────────────────────────── */
+@media (max-width: 768px) {
+  .section { padding: 80px 0; }
+
+  /* Navigation */
+  .nav-links,
+  .nav-cta    { display: none; }
+  .hamburger  { display: flex; }
+
+  /* Layout */
+  .steps-track { grid-template-columns: 1fr; }
+  .form-row    { grid-template-columns: 1fr; }
+  .footer-top  { grid-template-columns: 1fr; }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* Hero */
+  .hero-flow  { gap: 8px; }
+  .flow-arrow { display: none; }
+  .hero-stats { gap: 32px; }
+
+  /* Problem */
+  .problem-visual { display: none; }
+}
+
+/* ─── Small Mobile (≤ 480px) ─────────────────────────── */
+@media (max-width: 480px) {
+  .features-grid { grid-template-columns: 1fr; }
+  .cases-grid    { grid-template-columns: 1fr; }
+  .roles-grid    { grid-template-columns: 1fr; }
+  .why-grid      { grid-template-columns: 1fr; }
+}
